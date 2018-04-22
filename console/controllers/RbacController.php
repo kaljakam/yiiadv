@@ -27,7 +27,7 @@ class RbacController extends Controller {
     $auth->add($editor);
     
     // Создаем наше правило, которое позволит проверить автора новости
-    $authorRule = new yii\rbac\AuthorRule;
+    $authorRule = new \common\rbac\AuthorRule;
     
     // Запишем его в БД
     $auth->add($authorRule);

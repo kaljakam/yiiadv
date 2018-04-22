@@ -7,7 +7,7 @@
 
 namespace common\rbac;
 
-class AuthorRule extends yii\rbac\Rule
+class AuthorRule extends \yii\rbac\Rule
 {
   public $name = 'isAuthor';
   

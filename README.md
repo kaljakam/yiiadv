@@ -58,3 +58,25 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+# Разворачивание приложения:
+
+инициализация приложения
+```
+php composer update
+php init
+```
+
+В commmon/config/main-local.php прописываем правильные логин, пароль, имя дб
+
+миграции 
+```
+php yii migrate
+php yii migrate --migrationPath=@yii/rbac/migrations
+```
+
+инициализация ролей
+```
+php yii rbac/init
+```
+
